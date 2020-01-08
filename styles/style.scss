@@ -1,11 +1,14 @@
 html{
     font-size: 16px;
 }
+@font-face{
+    font-family: 'pixel';
+    src: url('../assets/fonts/VT323-Regular.ttf');
+}
 *{
     padding: 0;
     border: 0;
-    margin: 0;
-    
+    margin: 0;   
 }
 body{
     -moz-user-select: -moz-none;
@@ -13,6 +16,7 @@ body{
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-family: 'pixel', Arial, Helvetica, sans-serif;
     header{
         position: absolute;
         z-index: 1;
@@ -97,9 +101,11 @@ body{
 }
 
 .btn{
+    font-family: 'pixel', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     background: linear-gradient(to right, #ff416c, #ff4b2b);
     border: solid 2px #ff416c;
-    width: 130px;
+    width: 150px;
     padding-bottom: 15px;
     padding-top: 15px;
     margin-bottom: 10px;
