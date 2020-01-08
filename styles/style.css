@@ -29,6 +29,8 @@ body header {
   margin-top: 40px;
   color: #ff416c;
   font-size: 2rem;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 body main {
