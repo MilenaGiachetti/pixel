@@ -28,7 +28,7 @@ function changeCurrentColor(){
 
 //agregar eventListeners
 for(let i = 0 ; i< gridMembers.length; i++){
-    gridMembers[i].addEventListener('click', paint);
+    gridMembers[i].addEventListener('mouseup', paint);
     gridMembers[i].addEventListener('mousedown', paint);
 
 }

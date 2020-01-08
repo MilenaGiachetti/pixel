@@ -21,7 +21,8 @@ body {
   -ms-user-select: none;
   user-select: none;
   font-family: 'pixel', Arial, Helvetica, sans-serif;
-  background: #a0c7fe;
+  /*background: #CDD7D6;*/
+  background-image: radial-gradient(circle 343px at 46.3% 47.5%, #f2f2f2 0%, #f1f1f1 72.9%);
   height: 100vh;
 }
 
@@ -103,7 +104,6 @@ body main .herramientas #clear {
 }
 
 body main .herramientas .color {
-  background: #a0c7fe;
   width: 150px;
   padding: 20px;
   border: solid 2px #ff4b2b;
