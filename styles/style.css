@@ -29,8 +29,14 @@ body header {
   margin-top: 40px;
   color: #ff416c;
   font-size: 2rem;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+}
+
+body header .titleBorder {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 2px solid #ff416c;
+  border-top: 2px solid #ff416c;
 }
 
 body main {
@@ -108,7 +114,6 @@ body main .herramientas::after {
   border-bottom-right-radius: 30px;
   -webkit-box-shadow: 0 30px 0 0 #28262C;
           box-shadow: 0 30px 0 0 #28262C;
-  z-index: 5;
 }
 
 body main .herramientas #clear {
@@ -292,6 +297,9 @@ body main .herramientas .gridSize input {
     text-align: center;
   }
   body main .herramientas::before {
+    right: 600px;
+  }
+  body main .herramientas::after {
     right: 600px;
   }
 }
