@@ -33,6 +33,10 @@ body header {
   margin-bottom: 20px;
 }
 
+body header h1 {
+  font-weight: normal;
+}
+
 body header .titleBorder {
   display: inline-block;
   border-bottom: 5px solid #fff;
@@ -150,6 +154,19 @@ body main .herramientas::after {
 }
 
 body main .herramientas #clear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
 }
 
@@ -172,6 +189,13 @@ body main .herramientas .color {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+}
+
+body main .herramientas .color h2 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 body main .herramientas .color #currentColor {
