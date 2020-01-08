@@ -29,12 +29,14 @@ function changeCurrentColor(){
 }
 
 //agregar eventListeners
-for(let i = 0 ; i< gridMembers.length; i++){
-    gridMembers[i].addEventListener('click', paint);
-    gridMembers[i].addEventListener('mouseup', paint);
-    gridMembers[i].addEventListener('mousedown', paint);
-
+function attachEvent(){
+    for(let i = 0 ; i< gridMembers.length; i++){
+        gridMembers[i].addEventListener('click', paint);
+        gridMembers[i].addEventListener('mouseup', paint);
+        gridMembers[i].addEventListener('mousedown', paint);
+    }
 }
+attachEvent();
 function paint(){
     this.classList = '';
     this.classList.add(`${currentColor.classList.value}`);
@@ -61,6 +63,7 @@ function clear(){
     }
     gridMembers = [];
     makeGrid();
+    attachEvent();
 }
 
 let changeGrid = document.getElementById('changeGrid');
@@ -70,6 +73,7 @@ function changeGridSize(){
     let columnNumber = +changeInput.value;
     container.style["grid-template-columns"] = `repeat(${columnNumber}, 1fr)`;
     container.style["grid-template-rows"] = `repeat(${columnNumber}, 1fr)`;
+    attachEvent();
    // container.style["grid-template-columns"] = "repeat(40, 1fr)";
     /*for(let i = 0; i < 992; i++){
         if(i%31 != 0){
