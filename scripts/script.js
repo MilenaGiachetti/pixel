@@ -53,6 +53,8 @@ let clearBtn = document.getElementById('clear');
 clearBtn.addEventListener('click', clear);
 function clear(){
     for(let i = 0 ; i< gridMembers.length; i++){
-        gridMembers[i].classList.remove('red');
+        container.removeChild(gridMembers[i]);
     }
+    gridMembers = [];
+    makeGrid();
 }
