@@ -29,14 +29,16 @@ function changeCurrentColor(){
 //agregar eventListeners
 for(let i = 0 ; i< gridMembers.length; i++){
     gridMembers[i].addEventListener('mousedown', paint);
+    gridMembers[i].addEventListener('click', paint);
+
 }
 function paint(){
     this.classList = '';
     this.classList.add(`${currentColor.classList.value}`);
 }
 //check if click is active
-document.addEventListener('mousedown', addEvent);
-document.addEventListener('mouseup', removeEvent);
+container.addEventListener('mousedown', addEvent);
+container.addEventListener('mouseup', removeEvent);
 function addEvent(){
     for(let i = 0 ; i< gridMembers.length; i++){
         gridMembers[i].addEventListener('mouseover', paint);

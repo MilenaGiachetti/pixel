@@ -3,52 +3,72 @@ html{
 }
 body{
     background-image: radial-gradient( circle 621px at 25.3% 13.8%,  #DCE1DE 0%, #C2D5D6 90% );
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     main{
-        width: 50%;
-        background-color: #fff;
-        float: left;
-        border: solid 2px #1F2421;
-        display: grid;
-        grid-template-columns: repeat(30, 1fr);
-        grid-template-rows: repeat(30, 1fr);
-        grid-gap: 0;
-        grid-auto-flow: dense;
-        .gray{
-            width: 100%;
-            padding-bottom: 100%;
-            background-color: #f2f2f2;
-        }
-        .white{
-            width: 100%;
-            padding-bottom: 100%;
+        #container{
+            width: 50%;
             background-color: #fff;
+            float: left;
+            border: solid 2px #1F2421;
+            display: grid;
+            grid-template-columns: repeat(30, 1fr);
+            grid-template-rows: repeat(30, 1fr);
+            grid-gap: 0;
+            grid-auto-flow: dense;
+            .gray{
+                width: 100%;
+                padding-bottom: 100%;
+                background-color: #f2f2f2;
+            }
+            .white{
+                width: 100%;
+                padding-bottom: 100%;
+                background-color: #fff;
+            }
         }
-    }
-    aside{
-        float: left;
-        width: 100px;
-        text-align: center;
-        margin: 5px;
-        #currentColor{
-            width: 90px;
-            height: 50px;
-            margin-bottom: 5px;
-            border: solid 1px #000;
-        }
-        #basicColors{ 
-            width: 100%;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-            div{
-                margin-right: 5px;
-                margin-bottom: 5px;
-                width: 40px;
-                height: 40px;
-                border: 1px solid #000;
+        .herramientas{
+            width: 200px;
+            float: left;
+            text-align: center;
+            .color{
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+                #currentColor{
+                    width: 100px;
+                    height: 50px;
+                    margin-bottom: 10px;
+                    border: solid 1px #000;
+                }
+                #basicColors{ 
+                    width: 100px;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 10px;
+                    grid-auto-flow: dense;
+                    div{
+                        width: 100%;
+                        padding-bottom: 100%;
+                        border: 1px solid #000;
+                    }
+                }
             }
         }
     }
+}
+
+.btn{
+    width: 130px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 //clases de colores generales
 .black{

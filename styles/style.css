@@ -4,9 +4,13 @@ html {
 
 body {
   background-image: radial-gradient(circle 621px at 25.3% 13.8%, #DCE1DE 0%, #C2D5D6 90%);
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-body main {
+body main #container {
   width: 50%;
   background-color: #fff;
   float: left;
@@ -21,52 +25,70 @@ body main {
   grid-auto-flow: dense;
 }
 
-body main .gray {
+body main #container .gray {
   width: 100%;
   padding-bottom: 100%;
   background-color: #f2f2f2;
 }
 
-body main .white {
+body main #container .white {
   width: 100%;
   padding-bottom: 100%;
   background-color: #fff;
 }
 
-body aside {
+body main .herramientas {
+  width: 200px;
   float: left;
-  width: 100px;
   text-align: center;
-  margin: 5px;
 }
 
-body aside #currentColor {
-  width: 90px;
-  height: 50px;
-  margin-bottom: 5px;
-  border: solid 1px #000;
-}
-
-body aside #basicColors {
-  width: 100%;
+body main .herramientas .color {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
 }
 
-body aside #basicColors div {
-  margin-right: 5px;
-  margin-bottom: 5px;
-  width: 40px;
-  height: 40px;
+body main .herramientas .color #currentColor {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10px;
+  border: solid 1px #000;
+}
+
+body main .herramientas .color #basicColors {
+  width: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+
+body main .herramientas .color #basicColors div {
+  width: 100%;
+  padding-bottom: 100%;
   border: 1px solid #000;
+}
+
+.btn {
+  width: 130px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .black {
