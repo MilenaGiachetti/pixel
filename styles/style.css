@@ -2,18 +2,41 @@ html {
   font-size: 16px;
 }
 
-body {
-  width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#ff416c), to(#ff4b2b));
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
-  height: 100vh;
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 
-body main #container {
+body {
   -moz-user-select: -moz-none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+body header {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+}
+
+body main {
+  background-image: linear-gradient(115.7deg, #034f87 6.2%, #00b8d6 112.9%);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main #container {
   position: relative;
   z-index: 1;
   padding: 0px;
@@ -122,10 +145,12 @@ body main .herramientas .gridSize {
   padding-top: 15px;
   margin-bottom: 10px;
   border-radius: 5px;
+  color: #fff;
 }
 
 .btn:hover {
-  background-color: #000;
+  background: #000;
+  border: solid 2px #ff416c;
 }
 
 .black {

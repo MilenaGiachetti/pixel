@@ -1,17 +1,30 @@
 html{
     font-size: 16px;
 }
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    
+}
 body{
-    width: 100%;
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
-    height: 100vh;
-    main{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    header{
+        position: absolute;
+        z-index: 1;
+        background-color: #fff;
+    }
+    main{        
+        background-image: linear-gradient( 115.7deg,  rgba(3,79,135,1) 6.2%, rgba(0,184,214,1) 112.9% );
+        height: 100vh;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
         #container{
-            -moz-user-select: -moz-none;
-            -khtml-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
             position: relative;
             z-index: 1;
             padding:0px;
@@ -91,8 +104,10 @@ body{
     padding-top: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
+    color: #fff;
     &:hover{
-        background-color: #000;
+        background: #000;
+        border: solid 2px #ff416c;
     }
 }
 //clases de colores generales
