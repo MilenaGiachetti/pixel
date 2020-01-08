@@ -11,6 +11,10 @@ html{
     margin: 0;   
     box-sizing: border-box;
 }
+$colorPrimario: #ff4b2b;
+$colorPrimarioGradiente: #ff416c;
+$colorSecundario: #7b42ee;
+$colorDark: #28262C;
 body{
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -18,18 +22,37 @@ body{
     -ms-user-select: none;
     user-select: none;
     font-family: 'pixel', Arial, Helvetica, sans-serif;
-    background-image: radial-gradient( circle 343px at 46.3% 47.5%,  rgba(242,242,242,1) 0%, rgba(241,241,241,1) 72.9% );
+    background: $colorSecundario;
     header{
         margin-left: 120px;
         margin-top: 40px;
-        color: #ff416c;
-        font-size: 2rem;
+        color: #fff;
+        font-size: 1.5rem;
+        letter-spacing: 20px;
+
         .titleBorder{
             display: inline-block;
+            border-bottom: 5px solid #fff;
+            border-top: 5px solid #fff;
+        }
+        #firtPart{
+            padding-bottom: 5px;
+            padding-top: 5px;
+            width: 70px;
+            text-align: right;
+        }
+        #secondPart{
             padding-bottom: 10px;
+            padding-top: 0px;
+        }
+        #thirdPart{
+            padding-bottom: 15px;
             padding-top: 10px;
-            border-bottom: 2px solid #ff416c;
-            border-top: 2px solid #ff416c;
+        }
+        #fourthPart{
+            padding-bottom: 5px;
+            padding-top: 5px;
+            width: 50px;
         }
     }
     main{        
@@ -43,7 +66,7 @@ body{
             margin-right: 270px;
             margin-top: 40px;
             float: left;
-            border: solid 2px #28262C;
+            border: solid 2px $colorDark;
             border-radius: 5px;
             padding: 1px;
             display: grid;
@@ -51,7 +74,7 @@ body{
             grid-template-rows: repeat(30, 1fr);
             grid-gap: 0;
             grid-auto-flow: dense;
-            background-color: #28262C;
+            background-color: $colorDark;
             .gray{
                 width: 100%;
                 padding-bottom: 100%;
@@ -67,7 +90,7 @@ body{
             position: absolute;
             top: 0;
             right: 0;
-            background: #28262C;
+            background: $colorDark;
             height: 100vh;
             width: 300px;
             text-align: center;
@@ -79,7 +102,7 @@ body{
                 height: 60px;
                 width: 60px;
                 border-top-right-radius: 30px;
-                box-shadow: 0 -30px 0 0 #28262C; 
+                box-shadow: 0 -30px 0 0 $colorDark; 
             }
             &::after {
                 content: "";
@@ -89,7 +112,7 @@ body{
                 height: 60px;
                 width: 60px;
                 border-bottom-right-radius: 30px;
-                box-shadow: 0 30px 0 0 #28262C; 
+                box-shadow: 0 30px 0 0 $colorDark; 
             }
             #clear{
                 margin-top:  50px;
@@ -97,7 +120,7 @@ body{
             .color{
                 width: 150px;
                 padding: 20px;
-                border: solid 2px #ff4b2b;
+                border: solid 2px $colorPrimario;
                 border-radius: 5px;
                 display: flex;
                 flex-flow: column wrap;
@@ -109,7 +132,7 @@ body{
                     width: 100px;
                     height: 80px;
                     margin-bottom: 10px;
-                    border: solid 1px #28262C;
+                    border: solid 1px $colorDark;
                 }
                 #basicColors{ 
                     width: 100px;
@@ -120,7 +143,7 @@ body{
                     div{
                         width: 100%;
                         padding-bottom: 100%;
-                        border: 1px solid #28262C;
+                        border: 1px solid $colorDark;
                     }
                 }
             }
@@ -131,7 +154,7 @@ body{
                 input{
                     width: 150px;
                     padding: 10px;
-                    border: 1px solid #ff416c;
+                    border: 1px solid $colorPrimario;
                     border-radius: 5px;
                     margin-bottom: 10px;
                     text-align: center;
@@ -144,8 +167,8 @@ body{
 .btn{
     font-family: 'pixel', Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
-    border: solid 2px #ff416c;
+    background: linear-gradient(to right, $colorPrimarioGradiente, $colorPrimario);
+    border: solid 2px $colorPrimarioGradiente;
     width: 150px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -153,8 +176,11 @@ body{
     border-radius: 5px;
     color: #fff;
     &:hover{
-        background: #000;
-        border: solid 2px #ff416c;
+        background: $colorDark;
+        border: solid 2px $colorPrimario;
+    }
+    &:active{
+        background: linear-gradient(to left, $colorPrimarioGradiente, $colorPrimario);
     }
 }
 //clases de colores generales
@@ -227,7 +253,7 @@ body{
                 position: absolute;
                 top: 0;
                 right: 0;
-                background: #28262C;
+                background: $colorDark;
                 height: 100vh;
                 width: 600px;
 

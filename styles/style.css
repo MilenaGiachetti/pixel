@@ -21,22 +21,44 @@ body {
   -ms-user-select: none;
   user-select: none;
   font-family: 'pixel', Arial, Helvetica, sans-serif;
-  background-image: radial-gradient(circle 343px at 46.3% 47.5%, #f2f2f2 0%, #f1f1f1 72.9%);
+  background: #7b42ee;
 }
 
 body header {
   margin-left: 120px;
   margin-top: 40px;
-  color: #ff416c;
-  font-size: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 20px;
 }
 
 body header .titleBorder {
   display: inline-block;
+  border-bottom: 5px solid #fff;
+  border-top: 5px solid #fff;
+}
+
+body header #firtPart {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 70px;
+  text-align: right;
+}
+
+body header #secondPart {
   padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+body header #thirdPart {
+  padding-bottom: 15px;
   padding-top: 10px;
-  border-bottom: 2px solid #ff416c;
-  border-top: 2px solid #ff416c;
+}
+
+body header #fourthPart {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 50px;
 }
 
 body main {
@@ -181,7 +203,7 @@ body main .herramientas .gridSize {
 body main .herramientas .gridSize input {
   width: 150px;
   padding: 10px;
-  border: 1px solid #ff416c;
+  border: 1px solid #ff4b2b;
   border-radius: 5px;
   margin-bottom: 10px;
   text-align: center;
@@ -202,8 +224,13 @@ body main .herramientas .gridSize input {
 }
 
 .btn:hover {
-  background: #000;
-  border: solid 2px #ff416c;
+  background: #28262C;
+  border: solid 2px #ff4b2b;
+}
+
+.btn:active {
+  background: -webkit-gradient(linear, right top, left top, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(to left, #ff416c, #ff4b2b);
 }
 
 .black {
