@@ -6,7 +6,7 @@ let columnCount = 0;
 function makeGrid(){
     for(let i = 0; i <= ((30+(10*columnCount))*(30+(10*columnCount))+(30+(10*columnCount))) ; i++){
         //if(i%(31+(10*columnCount)) != 0){
-            if(i%41 != 0){
+            if(i%(31+(10*columnCount)) != 0){
 
             let square = document.createElement('div');
             (i%2 == 0)?square.classList.add('white'):square.classList.add('gray');
