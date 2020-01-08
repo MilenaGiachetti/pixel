@@ -86,6 +86,31 @@ body main .herramientas {
   text-align: center;
 }
 
+body main .herramientas::before {
+  content: "";
+  position: absolute;
+  right: 300px;
+  top: 0px;
+  height: 60px;
+  width: 60px;
+  border-top-right-radius: 30px;
+  -webkit-box-shadow: 0 -30px 0 0 #28262C;
+          box-shadow: 0 -30px 0 0 #28262C;
+}
+
+body main .herramientas::after {
+  content: "";
+  position: absolute;
+  right: 300px;
+  bottom: 0px;
+  height: 60px;
+  width: 60px;
+  border-bottom-right-radius: 30px;
+  -webkit-box-shadow: 0 30px 0 0 #28262C;
+          box-shadow: 0 30px 0 0 #28262C;
+  z-index: 5;
+}
+
 body main .herramientas #clear {
   margin-top: 50px;
 }
@@ -238,5 +263,36 @@ body main .herramientas .gridSize input {
 
 .appleGreen {
   background-color: #ccff33;
+}
+
+@media screen and (min-width: 1000px) {
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  body main #container {
+    position: relative;
+    z-index: 1;
+    padding: 0px;
+    width: 40%;
+    margin-right: 520px;
+    margin-top: 0;
+  }
+  body main .herramientas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #28262C;
+    height: 100vh;
+    width: 600px;
+    text-align: center;
+  }
+  body main .herramientas::before {
+    right: 600px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
