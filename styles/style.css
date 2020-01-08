@@ -39,6 +39,91 @@ body main .red {
 
 body aside {
   float: left;
-  width: 10%;
+  width: 100px;
+}
+
+body aside #basicColors {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body aside #basicColors .basic {
+  margin: 4px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+}
+
+.black {
+  background-color: #000;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.darkGray {
+  background-color: #909090;
+}
+
+.lightGray {
+  background-color: #e2e2e2;
+}
+
+.blue {
+  background-color: #0000ff;
+}
+
+.lightBlue {
+  background-color: #66ffff;
+}
+
+.purple {
+  background-color: #8533ff;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.pink {
+  background-color: #ff3399;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.orange {
+  background-color: #ff9900;
+}
+
+.green {
+  background-color: #009900;
+}
+
+.lightGreen {
+  background-color: #66ff33;
+}
+
+.brown {
+  background-color: #cc3300;
+}
+
+.lilac {
+  background-color: #ccccff;
+}
+
+.appleGreen {
+  background-color: #ccff33;
 }
 /*# sourceMappingURL=style.css.map */
