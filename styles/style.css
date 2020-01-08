@@ -11,6 +11,8 @@ html {
   padding: 0;
   border: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -19,38 +21,37 @@ body {
   -ms-user-select: none;
   user-select: none;
   font-family: 'pixel', Arial, Helvetica, sans-serif;
+  background: #a0c7fe;
+  height: 100vh;
 }
 
 body header {
-  position: absolute;
-  z-index: 1;
-  background-color: #fff;
+  margin-left: 120px;
+  margin-top: 40px;
+  color: #ff416c;
+  font-size: 2rem;
 }
 
 body main {
-  background-image: linear-gradient(115.7deg, #034f87 6.2%, #00b8d6 112.9%);
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 body main #container {
   position: relative;
   z-index: 1;
   padding: 0px;
-  margin-left: 100px;
   width: calc(90% - 300px);
+  margin-right: 270px;
+  margin-top: 40px;
   float: left;
   border: solid 2px #28262C;
   border-radius: 5px;
+  padding: 1px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[30];
@@ -81,15 +82,7 @@ body main .herramientas {
   background: #28262C;
   height: 100vh;
   width: 300px;
-  float: left;
   text-align: center;
-}
-
-body main .herramientas #clear {
-  margin-top: 50px;
-}
-
-body main .herramientas .color {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,12 +96,37 @@ body main .herramientas .color {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
+}
+
+body main .herramientas #clear {
+  margin-top: 50px;
+}
+
+body main .herramientas .color {
+  background: #a0c7fe;
+  width: 150px;
+  padding: 20px;
+  border: solid 2px #ff4b2b;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
 }
 
 body main .herramientas .color #currentColor {
   width: 100px;
-  height: 50px;
+  height: 80px;
   margin-bottom: 10px;
   border: solid 1px #28262C;
 }
@@ -151,7 +169,7 @@ body main .herramientas .gridSize {
   width: 150px;
   padding-bottom: 15px;
   padding-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   border-radius: 5px;
   color: #fff;
 }

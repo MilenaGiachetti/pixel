@@ -9,6 +9,7 @@ html{
     padding: 0;
     border: 0;
     margin: 0;   
+    box-sizing: border-box;
 }
 body{
     -moz-user-select: -moz-none;
@@ -17,26 +18,28 @@ body{
     -ms-user-select: none;
     user-select: none;
     font-family: 'pixel', Arial, Helvetica, sans-serif;
+    background:  #a0c7fe ;
+    height: 100vh;
     header{
-        position: absolute;
-        z-index: 1;
-        background-color: #fff;
+        margin-left: 120px;
+        margin-top: 40px;
+        color: #ff416c;
+        font-size: 2rem;
     }
     main{        
-        background-image: linear-gradient( 115.7deg,  rgba(3,79,135,1) 6.2%, rgba(0,184,214,1) 112.9% );
-        height: 100vh;
         display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
+        justify-content: flex-end;
         #container{
             position: relative;
             z-index: 1;
             padding:0px;
-            margin-left: 100px;
             width: calc(90% - 300px);
+            margin-right: 270px;
+            margin-top: 40px;
             float: left;
             border: solid 2px #28262C;
             border-radius: 5px;
+            padding: 1px;
             display: grid;
             grid-template-columns: repeat(30, 1fr);
             grid-template-rows: repeat(30, 1fr);
@@ -61,20 +64,28 @@ body{
             background: #28262C;
             height: 100vh;
             width: 300px;
-            float: left;
             text-align: center;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
             #clear{
                 margin-top:  50px;
             }
             .color{
+                background: #a0c7fe;
+                width: 150px;
+                padding: 20px;
+                border: solid 2px #ff4b2b;
+                border-radius: 5px;
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: center;
                 align-items: center;
-                margin: 20px;
+                margin-bottom: 30px;
                 #currentColor{
                     width: 100px;
-                    height: 50px;
+                    height: 80px;
                     margin-bottom: 10px;
                     border: solid 1px #28262C;
                 }
@@ -108,7 +119,7 @@ body{
     width: 150px;
     padding-bottom: 15px;
     padding-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 5px;
     color: #fff;
     &:hover{
