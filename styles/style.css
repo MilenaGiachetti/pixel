@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  background-image: linear-gradient(109.6deg, #cce4f7 11.2%, #edf6fa 100.2%);
+}
+
+body main {
+  width: 90%;
+  background-color: #fff;
+  height: 90vh;
+  float: left;
+}
+
+body main .gray {
+  background-color: #f2f2f2;
+}
+
+body main .white {
+  background-color: #fff;
+}
+
+body aside {
+  float: left;
+  width: 10%;
+}
+/*# sourceMappingURL=style.css.map */
