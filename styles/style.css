@@ -56,7 +56,7 @@ body aside #basicColors {
           justify-content: space-evenly;
 }
 
-body aside #basicColors .basic {
+body aside #basicColors div {
   margin: 4px;
   width: 40px;
   height: 40px;
