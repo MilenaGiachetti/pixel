@@ -188,7 +188,6 @@ body main .herramientas .color {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
 }
 
 body main .herramientas .color h2 {
@@ -219,6 +218,22 @@ body main .herramientas .color #basicColors div {
   width: 100%;
   padding-bottom: 80%;
   border: 1px solid #28262C;
+}
+
+body main .herramientas .doUndo {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  font-size: 2rem;
 }
 
 body main .herramientas .gridSize {
@@ -253,6 +268,7 @@ body main .herramientas .gridSize input {
   padding-bottom: 10px;
   padding-top: 10px;
   border-radius: 5px;
+  letter-spacing: 3px;
   color: #fff;
 }
 
