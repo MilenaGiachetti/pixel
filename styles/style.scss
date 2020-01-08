@@ -13,7 +13,7 @@ html{
 }
 $colorPrimario: #ff4b2b;
 $colorPrimarioGradiente: #ff416c;
-$colorSecundario: #7b42ee;
+$colorSecundario: #6d54a0;
 $colorDark: #28262C;
 body{
     -moz-user-select: -moz-none;
@@ -57,15 +57,11 @@ body{
     }
     main{        
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         #container{
             position: relative;
             z-index: 1;
-            padding:0px;
-            width: calc(90% - 300px);
-            margin-right: 270px;
-            margin-top: 60px;
-            float: left;
+            width: 50%;
             border: solid 2px $colorDark;
             border-radius: 5px;
             padding: 1px;
@@ -242,15 +238,12 @@ body{
 @media screen and (min-width: 1000px) {
     body{
         main{        
-            display: flex;
-            justify-content: flex-end;
+
             #container{
                 position: relative;
                 z-index: 1;
                 padding:0px;
                 width: 40%;
-                margin-right: 520px;
-                margin-top: 0;
             }
             .herramientas{
                 position: absolute;
@@ -258,14 +251,14 @@ body{
                 right: 0;
                 background: $colorDark;
                 height: 100vh;
-                width: 600px;
+                width: 400px;
 
                 text-align: center;
                 &::before {
-                    right: 600px;
+                    right: 400px;
                 }
                 &::after {
-                    right: 600px;
+                    right: 400px;
                 }
             }
         }

@@ -21,7 +21,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   font-family: 'pixel', Arial, Helvetica, sans-serif;
-  background: #7b42ee;
+  background: #6d54a0;
 }
 
 body header {
@@ -66,19 +66,15 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main #container {
   position: relative;
   z-index: 1;
-  padding: 0px;
-  width: calc(90% - 300px);
-  margin-right: 270px;
-  margin-top: 60px;
-  float: left;
+  width: 50%;
   border: solid 2px #28262C;
   border-radius: 5px;
   padding: 1px;
@@ -311,21 +307,11 @@ body main .herramientas .gridSize input {
 }
 
 @media screen and (min-width: 1000px) {
-  body main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
   body main #container {
     position: relative;
     z-index: 1;
     padding: 0px;
     width: 40%;
-    margin-right: 520px;
-    margin-top: 0;
   }
   body main .herramientas {
     position: absolute;
@@ -333,14 +319,14 @@ body main .herramientas .gridSize input {
     right: 0;
     background: #28262C;
     height: 100vh;
-    width: 600px;
+    width: 400px;
     text-align: center;
   }
   body main .herramientas::before {
-    right: 600px;
+    right: 400px;
   }
   body main .herramientas::after {
-    right: 600px;
+    right: 400px;
   }
 }
 /*# sourceMappingURL=style.css.map */
