@@ -3,7 +3,7 @@
 let container = document.getElementById('container');
 let gridMembers = new Array;
 function makeGrid(){
-    for(let i = 0; i < 990; i++){
+    for(let i = 0; i < 992; i++){
         if(i%31 != 0){
             let square = document.createElement('div');
             (i%2 == 0)?square.classList.add('white'):square.classList.add('gray');
@@ -28,8 +28,8 @@ function changeCurrentColor(){
 
 //agregar eventListeners
 for(let i = 0 ; i< gridMembers.length; i++){
-    gridMembers[i].addEventListener('mousedown', paint);
     gridMembers[i].addEventListener('click', paint);
+    gridMembers[i].addEventListener('mousedown', paint);
 
 }
 function paint(){

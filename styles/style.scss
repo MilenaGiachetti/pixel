@@ -2,23 +2,30 @@ html{
     font-size: 16px;
 }
 body{
-    background-image: radial-gradient( circle 621px at 25.3% 13.8%,  #DCE1DE 0%, #C2D5D6 90% );
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    width: 100%;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    height: 100vh;
     main{
         #container{
-            width: 50%;
-            background-color: #fff;
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            position: relative;
+            z-index: 1;
+            padding:0px;
+            margin-left: 100px;
+            width: calc(90% - 300px);
             float: left;
-            border: solid 2px #1F2421;
+            border: solid 2px #28262C;
+            border-radius: 5px;
             display: grid;
             grid-template-columns: repeat(30, 1fr);
             grid-template-rows: repeat(30, 1fr);
             grid-gap: 0;
             grid-auto-flow: dense;
+            background-color: #28262C;
             .gray{
                 width: 100%;
                 padding-bottom: 100%;
@@ -31,9 +38,17 @@ body{
             }
         }
         .herramientas{
-            width: 200px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #28262C;
+            height: 100vh;
+            width: 300px;
             float: left;
             text-align: center;
+            #clear{
+                margin-top:  50px;
+            }
             .color{
                 display: flex;
                 flex-flow: column wrap;
@@ -44,7 +59,7 @@ body{
                     width: 100px;
                     height: 50px;
                     margin-bottom: 10px;
-                    border: solid 1px #000;
+                    border: solid 1px #28262C;
                 }
                 #basicColors{ 
                     width: 100px;
@@ -55,20 +70,30 @@ body{
                     div{
                         width: 100%;
                         padding-bottom: 100%;
-                        border: 1px solid #000;
+                        border: 1px solid #28262C;
                     }
                 }
+            }
+            .gridSize{
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
             }
         }
     }
 }
 
 .btn{
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: solid 2px #ff416c;
     width: 130px;
     padding-bottom: 15px;
     padding-top: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
+    &:hover{
+        background-color: #000;
+    }
 }
 //clases de colores generales
 .black{
