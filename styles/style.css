@@ -92,15 +92,16 @@ body main #container {
   background-color: #28262C;
 }
 
-body main #container .gray {
+body main #container div {
   width: 100%;
   padding-bottom: 100%;
+}
+
+body main #container .gray {
   background-color: #f2f2f2;
 }
 
 body main #container .white {
-  width: 100%;
-  padding-bottom: 100%;
   background-color: #fff;
 }
 

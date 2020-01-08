@@ -75,14 +75,14 @@ body{
             grid-gap: 0;
             grid-auto-flow: dense;
             background-color: $colorDark;
-            .gray{
+            div{
                 width: 100%;
                 padding-bottom: 100%;
+            }
+            .gray{
                 background-color: #f2f2f2;
             }
             .white{
-                width: 100%;
-                padding-bottom: 100%;
                 background-color: #fff;
             }
         }
