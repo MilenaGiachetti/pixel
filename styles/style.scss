@@ -23,20 +23,26 @@ body{
             padding-bottom: 100%;
             background-color: #fff;
         }
-        .red{
-            background-color: red;
-        }
     }
     aside{
         float: left;
         width: 100px;
+        text-align: center;
+        margin: 5px;
+        #currentColor{
+            width: 90px;
+            height: 50px;
+            margin-bottom: 5px;
+            border: solid 1px #000;
+        }
         #basicColors{ 
             width: 100%;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-evenly;
             div{
-                margin: 4px;
+                margin-right: 5px;
+                margin-bottom: 5px;
                 width: 40px;
                 height: 40px;
                 border: 1px solid #000;

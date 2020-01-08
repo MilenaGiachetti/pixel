@@ -33,13 +33,18 @@ body main .white {
   background-color: #fff;
 }
 
-body main .red {
-  background-color: red;
-}
-
 body aside {
   float: left;
   width: 100px;
+  text-align: center;
+  margin: 5px;
+}
+
+body aside #currentColor {
+  width: 90px;
+  height: 50px;
+  margin-bottom: 5px;
+  border: solid 1px #000;
 }
 
 body aside #basicColors {
@@ -57,7 +62,8 @@ body aside #basicColors {
 }
 
 body aside #basicColors div {
-  margin: 4px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   width: 40px;
   height: 40px;
   border: 1px solid #000;

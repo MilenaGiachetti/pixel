@@ -14,12 +14,26 @@ function makeGrid(){
 };
 makeGrid();
 
+//cambio de current color
+let currentColor = document.getElementById('currentColor');
+let basicColors = document.querySelectorAll(' #basicColors div');
+for(let i = 0 ; i< basicColors.length; i++){
+    basicColors[i].addEventListener('click', changeCurrentColor);
+}
+function changeCurrentColor(){
+    let newColor = this.getAttribute('class');
+    console.log(newColor);
+    currentColor.classList = '';
+    currentColor.classList.add(`${newColor}`);
+}
+
 //agregar eventListeners
 for(let i = 0 ; i< gridMembers.length; i++){
     gridMembers[i].addEventListener('mousedown', paint);
 }
 function paint(){
-    this.classList.add('red');
+    this.classList = '';
+    this.classList.add(`${currentColor.classList.value}`);
 }
 //check if click is active
 document.addEventListener('mousedown', addEvent);
