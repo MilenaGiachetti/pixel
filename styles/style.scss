@@ -1,17 +1,29 @@
+html{
+    font-size: 16px;
+}
 body{
-    background-image: linear-gradient( 109.6deg,  rgba(204,228,247,1) 11.2%, rgba(237,246,250,1) 100.2% );
+    background-image: radial-gradient( circle 621px at 25.3% 13.8%,  #DCE1DE 0%, #C2D5D6 90% );
     main{
         width: 90%;
         background-color: #fff;
-        height: 90vh;
+        height: 100%;
         float: left;
+        border: solid 2px #1F2421;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-gap: 0;
+        grid-auto-flow: dense;
         .gray{
+            width: 100%;
+            padding-bottom: 100%;
             background-color: #f2f2f2;
         }
         .white{
+            width: 100%;
+            padding-bottom: 100%;
             background-color: #fff;
         }
-
     }
     aside{
         float: left;
