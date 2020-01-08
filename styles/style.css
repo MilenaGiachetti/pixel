@@ -7,17 +7,16 @@ body {
 }
 
 body main {
-  width: 90%;
+  width: 50%;
   background-color: #fff;
-  height: 100%;
   float: left;
   border: solid 2px #1F2421;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[10];
-      grid-template-columns: repeat(10, 1fr);
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
+  -ms-grid-columns: (1fr)[30];
+      grid-template-columns: repeat(30, 1fr);
+  -ms-grid-rows: (1fr)[30];
+      grid-template-rows: repeat(30, 1fr);
   grid-gap: 0;
   grid-auto-flow: dense;
 }
@@ -32,6 +31,10 @@ body main .white {
   width: 100%;
   padding-bottom: 100%;
   background-color: #fff;
+}
+
+body main .red {
+  background-color: red;
 }
 
 body aside {

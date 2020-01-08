@@ -4,14 +4,13 @@ html{
 body{
     background-image: radial-gradient( circle 621px at 25.3% 13.8%,  #DCE1DE 0%, #C2D5D6 90% );
     main{
-        width: 90%;
+        width: 50%;
         background-color: #fff;
-        height: 100%;
         float: left;
         border: solid 2px #1F2421;
         display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: repeat(30, 1fr);
+        grid-template-rows: repeat(30, 1fr);
         grid-gap: 0;
         grid-auto-flow: dense;
         .gray{
@@ -23,6 +22,9 @@ body{
             width: 100%;
             padding-bottom: 100%;
             background-color: #fff;
+        }
+        .red{
+            background-color: red;
         }
     }
     aside{
