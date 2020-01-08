@@ -18,9 +18,7 @@ body{
     -ms-user-select: none;
     user-select: none;
     font-family: 'pixel', Arial, Helvetica, sans-serif;
-    /*background: #CDD7D6;*/
     background-image: radial-gradient( circle 343px at 46.3% 47.5%,  rgba(242,242,242,1) 0%, rgba(241,241,241,1) 72.9% );
-    height: 100vh;
     header{
         margin-left: 120px;
         margin-top: 40px;
@@ -66,10 +64,7 @@ body{
             height: 100vh;
             width: 300px;
             text-align: center;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
+
             #clear{
                 margin-top:  50px;
             }
@@ -82,7 +77,8 @@ body{
                 flex-flow: column wrap;
                 justify-content: center;
                 align-items: center;
-                margin-bottom: 30px;
+                margin: auto;
+                margin-bottom: 20px;
                 #currentColor{
                     width: 100px;
                     height: 80px;
@@ -117,9 +113,9 @@ body{
     background: linear-gradient(to right, #ff416c, #ff4b2b);
     border: solid 2px #ff416c;
     width: 150px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    margin-bottom: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
     color: #fff;
     &:hover{

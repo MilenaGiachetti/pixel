@@ -2,9 +2,12 @@
 //creacion de grilla
 let container = document.getElementById('container');
 let gridMembers = new Array;
+let columnCount = 0;
 function makeGrid(){
-    for(let i = 0; i < 992; i++){
-        if(i%31 != 0){
+    for(let i = 0; i <= ((30+(10*columnCount))*(30+(10*columnCount))+(30+(10*columnCount))) ; i++){
+        //if(i%(31+(10*columnCount)) != 0){
+            if(i%41 != 0){
+
             let square = document.createElement('div');
             (i%2 == 0)?square.classList.add('white'):square.classList.add('gray');
             gridMembers.push(square)
@@ -13,7 +16,7 @@ function makeGrid(){
     }
 };
 makeGrid();
-
+//console.log(window.getComputedStyle(container, null).gridTemplateColumns);
 //cambio de current color
 let currentColor = document.getElementById('currentColor');
 let basicColors = document.querySelectorAll(' #basicColors div');
@@ -28,6 +31,7 @@ function changeCurrentColor(){
 
 //agregar eventListeners
 for(let i = 0 ; i< gridMembers.length; i++){
+    gridMembers[i].addEventListener('click', paint);
     gridMembers[i].addEventListener('mouseup', paint);
     gridMembers[i].addEventListener('mousedown', paint);
 
@@ -59,3 +63,27 @@ function clear(){
     gridMembers = [];
     makeGrid();
 }
+
+let biggerGrid = document.getElementById('biggerGrid');
+let smallerGrid = document.getElementById('smallerGrid');
+biggerGrid.addEventListener('click', makeBigger)
+function makeBigger(){
+    columnCount++;
+    console.log(container.style["grid-template-columns"]);
+    console.log(window.getComputedStyle(container, null).gridTemplateColumns);
+    makeGrid();
+    let columnNumber = 30 + (10 * columnCount);
+    container.style["grid-template-columns"] = `repeat(${columnNumber}, 1fr)`;
+    container.style["grid-template-rows"] = `repeat(${columnNumber}, 1fr)`;
+   // container.style["grid-template-columns"] = "repeat(40, 1fr)";
+    /*for(let i = 0; i < 992; i++){
+        if(i%31 != 0){
+            let square = document.createElement('div');
+            (i%2 == 0)?square.classList.add('white'):square.classList.add('gray');
+            gridMembers.push(square)
+            container.appendChild(square);
+        }
+    }*/
+}
+//            grid-template-columns: repeat(30, 1fr);
+//grid-template-rows: repeat(30, 1fr);

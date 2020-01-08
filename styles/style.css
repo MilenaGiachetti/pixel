@@ -21,9 +21,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   font-family: 'pixel', Arial, Helvetica, sans-serif;
-  /*background: #CDD7D6;*/
   background-image: radial-gradient(circle 343px at 46.3% 47.5%, #f2f2f2 0%, #f1f1f1 72.9%);
-  height: 100vh;
 }
 
 body header {
@@ -84,19 +82,6 @@ body main .herramientas {
   height: 100vh;
   width: 300px;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 body main .herramientas #clear {
@@ -121,7 +106,8 @@ body main .herramientas .color {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 body main .herramientas .color #currentColor {
@@ -167,9 +153,9 @@ body main .herramientas .gridSize {
   background: linear-gradient(to right, #ff416c, #ff4b2b);
   border: solid 2px #ff416c;
   width: 150px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
   border-radius: 5px;
   color: #fff;
 }
