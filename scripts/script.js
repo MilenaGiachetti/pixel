@@ -22,7 +22,6 @@ for(let i = 0 ; i< basicColors.length; i++){
 }
 function changeCurrentColor(){
     let newColor = this.getAttribute('class');
-    console.log(newColor);
     currentColor.classList = '';
     currentColor.classList.add(`${newColor}`);
 }
