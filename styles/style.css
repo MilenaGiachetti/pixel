@@ -26,7 +26,7 @@ body {
 }
 
 body header {
-  height: 130px;
+  height: 100px;
   background: #28262C;
   color: #ff4b2b;
   font-size: 1rem;
@@ -179,7 +179,7 @@ body header nav .herramientas::before {
   content: "";
   position: absolute;
   right: 300px;
-  top: 130px;
+  top: 100px;
   height: 60px;
   width: 60px;
   border-top-right-radius: 30px;
@@ -282,7 +282,7 @@ body main {
 body main #container {
   position: relative;
   z-index: 1;
-  width: 40%;
+  width: 35%;
   border: solid 2px #28262C;
   border-radius: 5px;
   padding: 1px;
@@ -464,7 +464,7 @@ body main #container .white {
     position: relative;
     z-index: 1;
     padding: 0px;
-    width: 60%;
+    width: 50%;
     -webkit-transform: translateX(-100px) translateY(15px);
             transform: translateX(-100px) translateY(15px);
   }
