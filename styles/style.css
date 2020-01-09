@@ -141,6 +141,8 @@ body main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 body main #container {
@@ -159,8 +161,8 @@ body main #container {
   grid-gap: 0;
   grid-auto-flow: dense;
   background-color: #28262C;
-  -webkit-transform: translateX(-150px) translateY(65px);
-          transform: translateX(-150px) translateY(65px);
+  -webkit-transform: translateX(-150px) translateY(15px);
+          transform: translateX(-150px) translateY(15px);
 }
 
 body main #container div {
