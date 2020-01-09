@@ -14,7 +14,7 @@ html{
 }
 $colorPrimario: #ff4b2b;
 $colorPrimarioGradiente: #ff416c;
-$colorSecundario: rgb(86, 206, 176);
+$colorSecundario: rgb(153, 177, 171);
 $colorDark: #28262C;
 body{
     -moz-user-select: -moz-none;
@@ -379,7 +379,6 @@ body{
         user-select: auto;
         header{
             width: 100%;
-            position: fixed;
             height: 80px;
             h1{
                 z-index: 6;

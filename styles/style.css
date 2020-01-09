@@ -22,7 +22,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   font-family: 'pixel', Arial, Helvetica, sans-serif;
-  background: #56ceb0;
+  background: #99b1ab;
 }
 
 body header {
@@ -482,7 +482,6 @@ body main #container .white {
   }
   body header {
     width: 100%;
-    position: fixed;
     height: 80px;
   }
   body header h1 {
