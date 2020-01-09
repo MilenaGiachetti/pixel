@@ -481,6 +481,8 @@ body main #container .white {
     user-select: auto;
   }
   body header {
+    width: 100%;
+    position: fixed;
     height: 80px;
   }
   body header h1 {
@@ -564,8 +566,10 @@ body main #container .white {
     margin-bottom: 20px;
   }
   body main #container {
+    z-index: -1;
+    top: 50px;
     width: 90%;
-    margin-top: 5%;
+    margin-top: 15%;
     -webkit-transform: unset;
             transform: unset;
   }
