@@ -24,24 +24,27 @@ body{
     font-family: 'pixel', Arial, Helvetica, sans-serif;
     background: $colorSecundario;
     header{
-        margin-left: 120px;
-        margin-top: 40px;
-        color: #fff;
-        font-size: 1.5rem;
+        height: 130px;
+        background: $colorDark;
+        color: $colorPrimario;
+        font-size: 1rem;
         letter-spacing: 20px;
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
         h1{
+            margin-left: 5%;
             font-weight: normal;
         }
         .titleBorder{
             display: inline-block;
-            border-bottom: 5px solid #fff;
-            border-top: 5px solid #fff;
+            border-bottom: 3px solid $colorPrimario;
+            border-top: 3px solid $colorPrimario;
         }
-        #firtPart{
+        #firstPart{
             padding-bottom: 5px;
             padding-top: 5px;
-            width: 70px;
+            width: 50px;
             text-align: right;
         }
         #secondPart{
@@ -55,7 +58,41 @@ body{
         #fourthPart{
             padding-bottom: 5px;
             padding-top: 5px;
-            width: 50px;
+            width: 40px;
+        }
+        nav{
+            z-index: 2;
+            margin-left: auto;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            padding-right: 350px;
+            .doUndo{
+                padding: 20px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                color: #fff;
+                font-size: 2rem;
+                i{
+                    margin-left: 20px;
+                }
+            }
+            .gridSize{
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                input{
+                    width: 60px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                    margin: 20px;
+                    border: 1px solid $colorPrimario;
+                    border-radius: 5px;
+                    text-align: left;
+                }
+            }
         }
     }
     main{        
@@ -64,7 +101,7 @@ body{
         #container{
             position: relative;
             z-index: 1;
-            width: 50%;
+            width: 40%;
             border: solid 2px $colorDark;
             border-radius: 5px;
             padding: 1px;
@@ -74,6 +111,7 @@ body{
             grid-gap: 0;
             grid-auto-flow: dense;
             background-color: $colorDark;
+            transform: translate(-150px);
             div{
                 width: 100%;
                 padding-bottom: 100%;
@@ -96,13 +134,12 @@ body{
             height: 100vh;
             display: flex;
             flex-flow: column wrap;
-            justify-content: center;
             align-content: center;
             &::before {
                 content: "";
                 position: absolute;
                 right: 300px;
-                top: 0px;
+                top: 0;
                 height: 60px;
                 width: 60px;
                 border-top-right-radius: 30px;
@@ -123,6 +160,7 @@ body{
                 flex-flow: row wrap;
                 justify-content: space-evenly;
                 align-items: center;
+                margin-top: 150px;
                 margin-bottom: 20px;
             }
             .color{
@@ -159,27 +197,7 @@ body{
                     }
                 }
             }
-            .doUndo{
-                padding: 20px;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-                color: #fff;
-                font-size: 2rem;
-            }
-            .gridSize{
-                display: flex;
-                flex-flow: column wrap;
-                align-items: center;
-                input{
-                    width: 150px;
-                    padding: 10px;
-                    border: 1px solid $colorPrimario;
-                    border-radius: 5px;
-                    text-align: center;
-                    margin-bottom: 20px;
-                }
-            }
+        
         }
     }
 }
@@ -188,7 +206,7 @@ body{
     font-family: 'pixel', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     background: linear-gradient(to right, $colorPrimarioGradiente, $colorPrimario);
-    border: solid 2px $colorPrimarioGradiente;
+    border: solid 3px $colorPrimarioGradiente;
     width: 150px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -255,8 +273,8 @@ body{
     background-color: #ccff33;
 
 }
-
-@media screen and (min-width: 1000px) {
+/*
+@media screen and (min-width: 1200px) {
     body{
         main{        
 
@@ -286,4 +304,4 @@ body{
     }
     
 
-}
+}*/
