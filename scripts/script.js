@@ -94,3 +94,9 @@ function changeGridSize(){
 }
 //            grid-template-columns: repeat(30, 1fr);
 //grid-template-rows: repeat(30, 1fr);
+let nav = document.getElementById('nav');
+let navOpen = document.getElementsByClassName('fa-bars');
+navOpen[0].addEventListener('click', changeState);
+function changeState (){
+    nav.classList.toggle('hidden');
+}

@@ -45,6 +45,10 @@ body header h1 {
   font-weight: normal;
 }
 
+body header .fa-bars {
+  display: none;
+}
+
 body header .titleBorder {
   display: inline-block;
   border-bottom: 3px solid #ff4b2b;
@@ -470,18 +474,34 @@ body main #container .white {
 }
 
 @media (max-width: 900px) {
+  body {
+    -moz-user-select: -moz-auto;
+    -webkit-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+  }
+  body header {
+    height: 80px;
+  }
   body header h1 {
     z-index: 6;
     margin: auto;
+  }
+  body header .fa-bars {
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
   }
   body header nav {
     background: #28262C;
     padding: 0;
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 0;
     z-index: 5;
-    height: 100vh;
+    height: 700px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -552,6 +572,9 @@ body main #container .white {
   .btn {
     padding-bottom: 5px;
     padding-top: 5px;
+  }
+  .hidden {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
