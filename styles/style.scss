@@ -9,11 +9,12 @@ html{
     padding: 0;
     border: 0;
     margin: 0;   
+    outline: none;
     box-sizing: border-box;
 }
 $colorPrimario: #ff4b2b;
 $colorPrimarioGradiente: #ff416c;
-$colorSecundario: #6d54a0;
+$colorSecundario: #230050;
 $colorDark: #28262C;
 body{
     -moz-user-select: -moz-none;
@@ -88,9 +89,10 @@ body{
                     padding-bottom: 20px;
                     padding-left: 20px;
                     margin: 20px;
-                    border: 1px solid $colorPrimario;
+                    border: 2px solid $colorPrimario;
                     border-radius: 5px;
                     text-align: left;
+
                 }
             }
         }
@@ -111,7 +113,7 @@ body{
             grid-gap: 0;
             grid-auto-flow: dense;
             background-color: $colorDark;
-            transform: translate(-150px);
+            transform: translateX(-150px) translateY(65px);
             div{
                 width: 100%;
                 padding-bottom: 100%;
@@ -139,7 +141,7 @@ body{
                 content: "";
                 position: absolute;
                 right: 300px;
-                top: 0;
+                top: 130px;
                 height: 60px;
                 width: 60px;
                 border-top-right-radius: 30px;
@@ -206,13 +208,14 @@ body{
     font-family: 'pixel', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     background: linear-gradient(to right, $colorPrimarioGradiente, $colorPrimario);
-    border: solid 3px $colorPrimarioGradiente;
+    border: solid 2px $colorPrimarioGradiente;
     width: 150px;
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius: 5px;
     letter-spacing: 3px;
     color: #fff;
+    box-shadow: 2px 2px 5px #000;
     &:hover{
         background: $colorDark;
         border: solid 2px $colorPrimario;

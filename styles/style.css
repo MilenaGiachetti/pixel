@@ -11,6 +11,7 @@ html {
   padding: 0;
   border: 0;
   margin: 0;
+  outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -21,7 +22,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   font-family: 'pixel', Arial, Helvetica, sans-serif;
-  background: #6d54a0;
+  background: #230050;
 }
 
 body header {
@@ -128,7 +129,7 @@ body header nav .gridSize input {
   padding-bottom: 20px;
   padding-left: 20px;
   margin: 20px;
-  border: 1px solid #ff4b2b;
+  border: 2px solid #ff4b2b;
   border-radius: 5px;
   text-align: left;
 }
@@ -158,8 +159,8 @@ body main #container {
   grid-gap: 0;
   grid-auto-flow: dense;
   background-color: #28262C;
-  -webkit-transform: translate(-150px);
-          transform: translate(-150px);
+  -webkit-transform: translateX(-150px) translateY(65px);
+          transform: translateX(-150px) translateY(65px);
 }
 
 body main #container div {
@@ -199,7 +200,7 @@ body main .herramientas::before {
   content: "";
   position: absolute;
   right: 300px;
-  top: 0;
+  top: 130px;
   height: 60px;
   width: 60px;
   border-top-right-radius: 30px;
@@ -292,13 +293,15 @@ body main .herramientas .color #basicColors div {
   font-size: 1rem;
   background: -webkit-gradient(linear, left top, right top, from(#ff416c), to(#ff4b2b));
   background: linear-gradient(to right, #ff416c, #ff4b2b);
-  border: solid 3px #ff416c;
+  border: solid 2px #ff416c;
   width: 150px;
   padding-bottom: 10px;
   padding-top: 10px;
   border-radius: 5px;
   letter-spacing: 3px;
   color: #fff;
+  -webkit-box-shadow: 2px 2px 5px #000;
+          box-shadow: 2px 2px 5px #000;
 }
 
 .btn:hover {
