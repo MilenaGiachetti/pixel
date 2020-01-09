@@ -4,9 +4,17 @@ let container = document.getElementById('container');
 let gridMembers = new Array;
 let changeInput = document.getElementById('changeInput');
 function makeGrid(){
-    for(let i = 0; i <= ((+changeInput.value)*(+changeInput.value)+(+changeInput.value)) ; i++){
+    if((+changeInput.value)%2 === 0){
+        for(let i = 0; i <= ((+changeInput.value)*(+changeInput.value)+(+changeInput.value)) ; i++){
             if(i%(+changeInput.value+1) != 0){
-
+                let square = document.createElement('div');
+                (i%2 == 0)?square.classList.add('white'):square.classList.add('gray');
+                gridMembers.push(square)
+                container.appendChild(square);
+            }
+        }
+    }else{
+        for(let i = 0; i < ((+changeInput.value)*(+changeInput.value)) ; i++){
             let square = document.createElement('div');
             (i%2 == 0)?square.classList.add('white'):square.classList.add('gray');
             gridMembers.push(square)
