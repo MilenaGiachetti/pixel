@@ -13,43 +13,45 @@
     <header>
         <h1><span class="titleBorder" id="firstPart">P</span><span class="titleBorder" id="secondPart">ix</span><span class="titleBorder" id="thirdPart">e</span><span class="titleBorder" id="fourthPart">l</span></h1>
         <nav>
-            <div class="doUndo">
-                <i class="fas fa-undo-alt"></i>
-                <i class="fas disabled fa-redo-alt"></i>
+            <div class="topNav">
+                <div class="doUndo">
+                    <i class="fas fa-undo-alt"></i>
+                    <i class="fas disabled fa-redo-alt"></i>
+                </div>
+                <div class="gridSize">
+                    <input type="number" id="changeInput"  min="1" step="1" value="30" max="60">
+                    <button class="btn" id="changeGrid">Cambiar tamaño grilla</button>
+                </div>
             </div>
-            <div class="gridSize">
-                <input type="number" id="changeInput"  min="1" step="1" value="30" max="60">
-                <button class="btn" id="changeGrid">Cambiar tamaño grilla</button>
+            <div class="herramientas">
+                <button class="btn" id="clear"><span>Desechar</span><i class="far fa-trash-alt"></i></button>
+                <div class="color">
+                    <h2>Colores:</h2>
+                    <div id="currentColor" class="black"></div>
+                    <div id="basicColors">
+                        <div class="black"></div>
+                        <div class="darkGray"></div>
+                        <div class="white"></div>
+                        <div class="lightGray"></div>
+                        <div class="blue"></div>
+                        <div class="lightBlue"></div>
+                        <div class="purple"></div>
+                        <div class="lilac"></div>
+                        <div class="brown"></div>
+                        <div class="orange"></div>
+                        <div class="red"></div>
+                        <div class="pink"></div>
+                        <div class="green"></div>
+                        <div class="lightGreen"></div>
+                        <div class="appleGreen"></div>
+                        <div class="yellow"></div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <section id="container"></section>
-        <section class="herramientas">
-            <button class="btn" id="clear"><span>Desechar</span><i class="far fa-trash-alt"></i></button>
-            <div class="color">
-                <h2>Colores:</h2>
-                <div id="currentColor" class="black"></div>
-                <div id="basicColors">
-                    <div class="black"></div>
-                    <div class="darkGray"></div>
-                    <div class="white"></div>
-                    <div class="lightGray"></div>
-                    <div class="blue"></div>
-                    <div class="lightBlue"></div>
-                    <div class="purple"></div>
-                    <div class="lilac"></div>
-                    <div class="brown"></div>
-                    <div class="orange"></div>
-                    <div class="red"></div>
-                    <div class="pink"></div>
-                    <div class="green"></div>
-                    <div class="lightGreen"></div>
-                    <div class="appleGreen"></div>
-                    <div class="yellow"></div>
-                </div>
-            </div>
-        </section>
     </main>
     <footer>
 
