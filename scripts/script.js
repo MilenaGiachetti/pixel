@@ -51,7 +51,7 @@ function paint(){
 }
 //check if click is active
 container.addEventListener('mousedown', addEvent);
-container.addEventListener('mouseup', removeEvent);
+window.addEventListener('mouseup', removeEvent);
 function addEvent(){
     for(let i = 0 ; i< gridMembers.length; i++){
         gridMembers[i].addEventListener('mouseover', paint);
